@@ -2,18 +2,22 @@ import Profile from "/profile.png";
 
 function Layout({ children }) {
   return (
-    <div className="relative h-screen">
-      <main className="flex h-full">
-        <aside className="w-[40%] h-full">
+    <div className="relative min-h-screen bg-black text-white">
+      <main className="flex flex-col md:flex-row h-full">
+        {/* Sidebar / Profile Image */}
+        <aside className="w-full md:w-[40%] h-[60vh] sm:h-[70vh] md:h-screen shrink-0">
           <img
             src={Profile}
             alt="Profile picture"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
         </aside>
 
-        <section className="w-[60%] bg-content overflow-y-auto">
-          <div className="mt-20">{children}</div>
+        {/* Main Content */}
+        <section className="w-full md:w-[60%] bg-content min-h-[40vh] md:h-screen overflow-y-auto">
+          <div className="px-4 sm:px-6 md:px-10 py-10 md:py-16 space-y-6">
+            {children}
+          </div>
         </section>
       </main>
     </div>
