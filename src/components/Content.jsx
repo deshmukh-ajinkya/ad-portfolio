@@ -23,8 +23,11 @@ import Code from "/code.png";
 import Bug from "/bug.png";
 import Web from "/web.png";
 import Deploy from "/deployment.png";
-import Project1 from "/project1.png";
-import Repo from "/repo.png";
+import Portfolio_template from "/portfolio_template.png";
+import Demo from "/external.png";
+import Node_Package_Analyzer from "/npa.png";
+import React_Base_Kit from "/rbk.png";
+import Quickblog from "/quickblog.png";
 
 function Content() {
   const skills = [
@@ -188,21 +191,42 @@ function Content() {
         <header>
           <h1 className="text-3xl sm:text-4xl font-bold">Projects</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
-            PROOF OF WORK
+            WORK SAMPLES
           </h2>
         </header>
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
-            "Event Participation Full Stack App",
-            "AI Assistant",
-            "Portfolio Template",
-          ].map((title, i) => (
+            {
+              title: "Blogging With Analytics - Full Stack",
+              link: "https://quickblog-client-static.vercel.app/insight",
+              img: Quickblog,
+            },
+            {
+              title: "NPM Dependency Analyzer - Frontend + Open Source API",
+              link: "https://deshmukh-ajinkya.github.io/packageanalyzer/",
+              img: Node_Package_Analyzer,
+            },
+            {
+              title: "Frontend Boilerplate Template - Frontend",
+              link: "https://deshmukh-ajinkya.github.io/reactbasekit/",
+              img: React_Base_Kit,
+            },
+            {
+              title: "Portfolio Template - Frontend",
+              link: "https://deshmukh-ajinkya.github.io/portfolio/",
+              img: Portfolio_template,
+            },
+          ].map((item, i) => (
             <div key={i}>
-              <img src={Project1} alt="Project" className="rounded-lg" />
+              <img src={item.img} alt="Project" className="rounded-lg" />
               <div className="flex justify-between items-center mt-3 sm:mt-4">
-                <span className="text-sm sm:text-base">{title}</span>
-                <img src={Repo} alt="Repo" className="w-5 h-5" />
+                <span className="text-sm sm:text-base">{item.title}</span>
+                <div className="flex gap-4 items-center">
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <img src={Demo} alt="Demo" className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
@@ -218,7 +242,7 @@ function Content() {
           </h2>
         </header>
 
-        <div className="mb-16 mt-8 p-6 sm:p-10 border border-white rounded-2xl font-bold space-y-3 sm:space-y-4 ">
+        <div className="mb-16 mt-8 p-6 sm:p-10 border border-purecyan/10 rounded-2xl font-bold space-y-3 sm:space-y-4 ">
           <p className="text-xl sm:text-3xl">Ajinkya Deshmukh</p>
           <p className="text-md sm:text-lg text-purecyan">
             Web Developer | Freelancer
@@ -228,7 +252,7 @@ function Content() {
             {[
               { label: "Email", value: "ajinkya.deshmukh.webdev@gmail.com" },
               { label: "Phone", value: "+91-9371995977" },
-              { label: "Residence", value: "India" },
+              { label: "Country", value: "India" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-wrap gap-x-4 w-full">
                 <p className="text-purecyan w-[120px] shrink-0">{item.label}</p>
