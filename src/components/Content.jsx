@@ -52,7 +52,7 @@ function Content() {
   ];
 
   return (
-    <main className="flex flex-col text-white min-h-[calc(100vh-128px)] px-4 sm:px-6 md:px-12 lg:px-24 py-10 md:py-16">
+    <main className="flex flex-col text-white">
       {/* Intro Section */}
       <section className="flex flex-col mb-12 md:mb-16">
         <header>
@@ -94,7 +94,10 @@ function Content() {
           PRIMARY TECHNOLOGIES
         </h3>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-y-10 gap-x-5 sm:gap-x-6 md:gap-x-8">
+        <div
+          className="grid gap-y-10 gap-x-6"
+          style={{ gridTemplateColumns: "repeat(auto-fit, minmax(80px, 1fr))" }}
+        >
           {skills.map((skill, index) => (
             <article
               key={index}
@@ -114,7 +117,7 @@ function Content() {
       </section>
 
       {/* Services Section */}
-      <section id="Services" className="mb-12 md:mb-16">
+      <section id="Services" className="mb-12 md:mb-16 overflow-hidden">
         <header>
           <h1 className="text-3xl sm:text-4xl font-bold">Services</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
@@ -128,36 +131,36 @@ function Content() {
               icon: Code,
               title: ["Web", "Development"],
               desc: [
-                "Create custom landing page",
-                "Custom full stack app",
-                "Integrate API",
+                "Create custom landing page for your business",
+                "Custom full stack app based on your requirement",
+                "Integrate API with your existing app",
               ],
             },
             {
               icon: Bug,
               title: ["Bug", "Fixes"],
               desc: [
-                "Identify and fix bugs",
-                "Ensure smooth performance",
-                "Resolve UI/UX glitches",
+                "Identify and fix critical bugs across frontend and backend.",
+                "Ensure smooth performance with thorough testing.",
+                "Resolve UI/UX glitches for seamless user experience",
               ],
             },
             {
               icon: Web,
               title: ["UI/UX", "Figma Design"],
               desc: [
-                "Create user centric UI/UX",
-                "Prototype for app flow",
-                "Optimize existing UI/UX",
+                "Create user centric UI/UX design",
+                "Create prototype to demonstrate app flow.",
+                "Rewamp & Optimize existing UI/UX design.",
               ],
             },
             {
               icon: Deploy,
               title: ["App", "Deployment"],
               desc: [
-                "Deploy MERN app to AWS",
-                "Fix deployment issues",
-                "Configure domains",
+                "End-to-end deployment of mern stack web app on aws.",
+                "Troobleshoot & fix deployment issues.",
+                "Configure domain on aws cloud.",
               ],
             },
           ].map((service, i) => (
@@ -181,7 +184,7 @@ function Content() {
       </section>
 
       {/* Projects Section */}
-      <section id="Projects" className="mb-12 md:mb-16">
+      <section id="Projects" className="mb-12 md:mb-16 overflow-hidden">
         <header>
           <h1 className="text-3xl sm:text-4xl font-bold">Projects</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
@@ -215,7 +218,7 @@ function Content() {
           </h2>
         </header>
 
-        <div className="mb-16 mt-8 p-6 sm:p-10 border border-white rounded-2xl font-bold space-y-3 sm:space-y-4">
+        <div className="mb-16 mt-8 p-6 sm:p-10 border border-white rounded-2xl font-bold space-y-3 sm:space-y-4 ">
           <p className="text-xl sm:text-3xl">Ajinkya Deshmukh</p>
           <p className="text-md sm:text-lg text-purecyan">
             Web Developer | Freelancer
@@ -257,7 +260,7 @@ function Content() {
           />
 
           <div className="flex justify-end mt-2">
-            <button className="border border-purecyan text-white px-4 py-2 w-48 rounded-lg hover:bg-purecyan hover:text-black transition">
+            <button className="mb-8 sm:mb-0 border border-purecyan text-white px-4 py-2 w-48 rounded-lg hover:bg-purecyan hover:text-black transition">
               Send
             </button>
           </div>
