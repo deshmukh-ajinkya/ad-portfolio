@@ -28,6 +28,7 @@ import Demo from "/external.png";
 import Node_Package_Analyzer from "/npa.png";
 import React_Base_Kit from "/rbk.png";
 import Quickblog from "/quickblog.png";
+import EventManage from "/landing_page.png";
 
 function Content() {
   const skills = [
@@ -189,7 +190,7 @@ function Content() {
       {/* Projects Section */}
       <section id="Projects" className="mb-12 md:mb-16 overflow-hidden">
         <header>
-          <h1 className="text-3xl sm:text-4xl font-bold">Projects</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold">APPS</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
             WORK SAMPLES
           </h2>
@@ -198,7 +199,7 @@ function Content() {
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
             {
-              title: "Blogging With Analytics - Full Stack",
+              title: "Blogging App - Full Stack",
               link: "https://quickblog-client-static.vercel.app/insight",
               img: Quickblog,
             },
@@ -216,6 +217,11 @@ function Content() {
               title: "Portfolio Template - Frontend",
               link: "https://deshmukh-ajinkya.github.io/portfolio/",
               img: Portfolio_template,
+            },
+            {
+              title: "Event Management - UI/UX",
+              link: "https://www.figma.com/design/Z4vFsyMeRAEZLODh7E489Q/Event-Booking?node-id=0-1&t=mwNUs3hKYgXD2dhV-1",
+              img: EventManage,
             },
           ].map((item, i) => (
             <div key={i}>
