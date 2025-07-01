@@ -3,6 +3,7 @@ import Linux from "/linux.png";
 import Html from "/html.png";
 import Css from "/css.png";
 import Tailwind from "/tailwind.png";
+import Mui from "/mui.png";
 import Js from "/js.png";
 import Ts from "/ts.png";
 import ReactImg from "/react.png";
@@ -12,11 +13,11 @@ import NextJs from "/nextjs.png";
 import Mongodb from "/mongodb.png";
 import Express from "/express.png";
 import Node from "/nodejs.png";
+import Jwt from "/jwt.png";
 import Figma from "/figma.png";
 import Axios from "/axios.png";
 import Cors from "/cors.png";
 import Github from "/github.png";
-import Trello from "/trello.png";
 import Docker from "/docker.png";
 import Aws from "/aws.png";
 import Code from "/code.png";
@@ -26,7 +27,7 @@ import Deploy from "/deployment.png";
 import Portfolio_template from "/portfolio_template.png";
 import Demo from "/external.png";
 import Node_Package_Analyzer from "/npa.png";
-import React_Base_Kit from "/rbk.png";
+import FreelanceTemplate from "/freelancetemplate.png";
 import Quickblog from "/quickblog.png";
 import EventManage from "/landing_page.png";
 
@@ -34,9 +35,11 @@ function Content() {
   const skills = [
     { name: "Windows", icon: Windows },
     { name: "Linux", icon: Linux },
+    { name: "Figma", icon: Figma },
     { name: "HTML 5", icon: Html },
     { name: "CSS 3", icon: Css },
     { name: "Tailwind CSS", icon: Tailwind },
+    { name: "Material UI", icon: Mui },
     { name: "JavaScript", icon: Js },
     { name: "TypeScript", icon: Ts },
     { name: "React.Js", icon: ReactImg },
@@ -46,11 +49,10 @@ function Content() {
     { name: "MongoDB", icon: Mongodb },
     { name: "Express", icon: Express },
     { name: "Node.js", icon: Node },
-    { name: "Figma", icon: Figma },
+    { name: "JWT Auth", icon: Jwt },
     { name: "Axios", icon: Axios },
     { name: "Cors", icon: Cors },
     { name: "Github", icon: Github },
-    { name: "Trello", icon: Trello },
     { name: "Docker", icon: Docker },
     { name: "AWS Cloud", icon: Aws },
   ];
@@ -199,27 +201,27 @@ function Content() {
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
             {
-              title: "Blogging App - Full Stack",
+              title: "Blogging App Template",
               link: "https://quickblog-client-static.vercel.app/insight",
               img: Quickblog,
             },
             {
-              title: "NPM Dependency Analyzer - Frontend + Open Source API",
+              title: "NPM Dependency Analyzer",
               link: "https://deshmukh-ajinkya.github.io/packageanalyzer/",
               img: Node_Package_Analyzer,
             },
             {
-              title: "Frontend Boilerplate Template - Frontend",
+              title: "Freelance Portfolio Template",
               link: "https://deshmukh-ajinkya.github.io/reactbasekit/",
-              img: React_Base_Kit,
+              img: FreelanceTemplate,
             },
             {
-              title: "Portfolio Template - Frontend",
+              title: "IT Professional Portfolio Template",
               link: "https://deshmukh-ajinkya.github.io/portfolio/",
               img: Portfolio_template,
             },
             {
-              title: "Event Management - UI/UX",
+              title: "Landing Page Template - UI/UX",
               link: "https://www.figma.com/design/Z4vFsyMeRAEZLODh7E489Q/Event-Booking?node-id=0-1&t=mwNUs3hKYgXD2dhV-1",
               img: EventManage,
             },
