@@ -200,7 +200,7 @@ function Content() {
           {[
             {
               title: "Blogging App Template",
-              link: "https://quickblog-client-static.vercel.app/insight",
+              link: "https://blogging-template-one.vercel.app/login",
               img: Quickblog,
             },
             {
