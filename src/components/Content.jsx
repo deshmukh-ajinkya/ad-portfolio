@@ -8,7 +8,6 @@ import Js from "/js.png";
 import Ts from "/ts.png";
 import ReactImg from "/react.png";
 import ReduxImg from "/redux.png";
-import Router from "/reactrouter.png";
 import NextJs from "/nextjs.png";
 import Mongodb from "/mongodb.png";
 import Express from "/express.png";
@@ -24,7 +23,7 @@ import Code from "/code.png";
 import Bug from "/bug.png";
 import Web from "/web.png";
 import Deploy from "/deployment.png";
-import Portfolio_template from "/portfolio_template.png";
+import Landing_Page from "/landing_page.png";
 import Demo from "/external.png";
 import Node_Package_Analyzer from "/npa.png";
 import Quickblog from "/quickblog.png";
@@ -42,7 +41,6 @@ function Content() {
     { name: "TypeScript", icon: Ts },
     { name: "React.Js", icon: ReactImg },
     { name: "Redux", icon: ReduxImg },
-    { name: "React Router", icon: Router },
     { name: "Next.js", icon: NextJs },
     { name: "MongoDB", icon: Mongodb },
     { name: "Express", icon: Express },
@@ -123,7 +121,7 @@ function Content() {
       {/* Services Section */}
       <section id="Services" className="mb-12 md:mb-16 overflow-hidden">
         <header>
-          <h1 className="text-3xl sm:text-4xl font-bold">Services</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold">Experience</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
             WHAT I CAN DO FOR YOU
           </h2>
@@ -135,16 +133,16 @@ function Content() {
               icon: Code,
               title: ["Web", "Development"],
               desc: [
-                "Create custom landing page for your business",
-                "Custom full stack app based on your requirement",
-                "Integrate API with your existing app",
+                "Create custom landing page",
+                "Custom dynamic web application development",
+                "Integrate API with frontend",
               ],
             },
             {
               icon: Bug,
               title: ["Bug", "Fixes"],
               desc: [
-                "Identify and fix critical bugs across frontend and backend.",
+                "Identify and fix critical bugs across frontend.",
                 "Ensure smooth performance with thorough testing.",
                 "Resolve UI/UX glitches for seamless user experience",
               ],
@@ -209,9 +207,9 @@ function Content() {
               img: Node_Package_Analyzer,
             },
             {
-              title: "IT Professional Portfolio Template",
-              link: "https://deshmukh-ajinkya.github.io/portfolio/",
-              img: Portfolio_template,
+              title: "Event Booking UI/UX",
+              link: "https://www.figma.com/design/Z4vFsyMeRAEZLODh7E489Q/Event-Booking?node-id=0-1&t=ulyIcaomb0YsVxsx-1",
+              img: Landing_Page,
             },
           ].map((item, i) => (
             <div key={i}>
@@ -247,7 +245,7 @@ function Content() {
           <div className="flex flex-col gap-4 pt-4 text-sm sm:text-base">
             {[
               { label: "Email", value: "ajinkya.deshmukh.webdev@gmail.com" },
-              { label: "Phone", value: "+91-9371995977" },
+              { label: "Phone", value: "+91-7719950703" },
               { label: "Country", value: "India" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-wrap gap-x-4 w-full">
@@ -280,7 +278,7 @@ function Content() {
           />
 
           <div className="flex justify-end mt-2">
-            <button className="mb-8 sm:mb-0 border border-purecyan text-white px-4 py-2 w-48 rounded-lg hover:bg-purecyan hover:text-black transition">
+            <button className="mb-8 sm:mb-0 border border-purecyan text-white font-bold px-4 py-2 w-48 rounded-lg hover:bg-purecyan hover:text-black transition">
               Send
             </button>
           </div>
