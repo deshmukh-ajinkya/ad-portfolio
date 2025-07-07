@@ -60,32 +60,56 @@ function Content() {
         <header>
           <h1 className="text-3xl sm:text-4xl font-bold">Ajinkya Deshmukh</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
-            MERN STACK DEVELOPER | FRONTEND EXPERTISE
+            FRONTEND DEVELOPER | REACT SPECIALIST
           </h2>
         </header>
 
         <div className="mt-6 text-sm sm:text-base leading-relaxed space-y-5 max-w-3xl">
           <p>
-            I'm a{" "}
+            I’m a <span className="font-semibold">front-end specialist</span>{" "}
+            with expertise in <span className="font-semibold">React.js</span>{" "}
+            and its modern ecosystem, including{" "}
+            <span className="font-semibold">Next.js</span>,{" "}
+            <span className="font-semibold">Tailwind CSS</span>, and more. I
+            build clean, responsive, and high-performance interfaces that turn
+            complex product requirements into intuitive, user-friendly digital
+            experiences.
+          </p>
+          <p>
+            My core focus is{" "}
             <span className="font-semibold">
-              Frontend-Focused Web Developer
-            </span>{" "}
-            based in India, passionate about building elegant, responsive
-            interfaces and full-stack applications using the{" "}
-            <span className="font-semibold">MERN stack</span>.
-          </p>
-          <p>
-            I specialize in crafting intuitive user experiences through
-            attention to <span className="font-semibold">UI/UX design</span>,{" "}
+              scalable and maintainable front-end architecture
+            </span>
+            , with a strong emphasis on{" "}
+            <span className="font-semibold">performance</span>,{" "}
             <span className="font-semibold">accessibility</span>, and{" "}
-            <span className="font-semibold">performance optimization</span>.
+            <span className="font-semibold">pixel-perfect implementation</span>.
+            I also have a solid foundation in{" "}
+            <span className="font-semibold">UI/UX principles</span> and
+            confidently use tools like{" "}
+            <span className="font-semibold">Figma</span> and design systems to
+            translate concepts into user-centered, production-ready
+            applications.
           </p>
           <p>
-            Beyond frontend, I’m proficient in{" "}
-            <span className="font-semibold">Node.js</span>,{" "}
-            <span className="font-semibold">Express</span>, and{" "}
-            <span className="font-semibold">MongoDB</span>, enabling me to build
-            robust backend systems and APIs.
+            To ensure smooth front-end–backend integration, I actively explore
+            backend technologies and system behavior as implemented by backend
+            teams to better understand the full product landscape. I can also
+            handle essential backend tasks when needed—such as implementing{" "}
+            <span className="font-semibold">JWT-based authentication</span>,
+            developing{" "}
+            <span className="font-semibold">
+              REST APIs with Node and Express
+            </span>
+            , connecting servers to databases, and defining basic{" "}
+            <span className="font-semibold">MongoDB schemas</span>—while leaving
+            complexity to backend specialists.
+          </p>
+          <p>
+            My goal is to deliver front-end solutions that are visually
+            polished, functionally robust, and seamlessly integrated—creating
+            meaningful value for users and aligning with the broader product
+            vision.
           </p>
         </div>
       </section>
@@ -258,7 +282,7 @@ function Content() {
           </div>
         </div>
 
-        <div className="text-black flex flex-col gap-4">
+        {/*         <div className="text-black flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-4">
             <input
               type="text"
@@ -282,7 +306,7 @@ function Content() {
               Send
             </button>
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );
