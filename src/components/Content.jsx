@@ -27,9 +27,7 @@ import Deploy from "/deployment.png";
 import Portfolio_template from "/portfolio_template.png";
 import Demo from "/external.png";
 import Node_Package_Analyzer from "/npa.png";
-import FreelanceTemplate from "/freelancetemplate.png";
 import Quickblog from "/quickblog.png";
-import EventManage from "/landing_page.png";
 
 function Content() {
   const skills = [
@@ -211,19 +209,9 @@ function Content() {
               img: Node_Package_Analyzer,
             },
             {
-              title: "Freelance Portfolio Template",
-              link: "https://deshmukh-ajinkya.github.io/reactbasekit/",
-              img: FreelanceTemplate,
-            },
-            {
               title: "IT Professional Portfolio Template",
               link: "https://deshmukh-ajinkya.github.io/portfolio/",
               img: Portfolio_template,
-            },
-            {
-              title: "Landing Page Template - UI/UX",
-              link: "https://www.figma.com/design/Z4vFsyMeRAEZLODh7E489Q/Event-Booking?node-id=0-1&t=mwNUs3hKYgXD2dhV-1",
-              img: EventManage,
             },
           ].map((item, i) => (
             <div key={i}>
