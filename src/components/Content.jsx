@@ -145,7 +145,7 @@ function Content() {
       {/* Services Section */}
       <section id="Services" className="mb-12 md:mb-16 overflow-hidden">
         <header>
-          <h1 className="text-3xl sm:text-4xl font-bold">Experience</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold">DELIVERABLES</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
             WHAT I CAN DO FOR YOU
           </h2>
@@ -157,9 +157,9 @@ function Content() {
               icon: Code,
               title: ["Web", "Development"],
               desc: [
-                "Create custom landing page",
-                "Custom dynamic web application development",
-                "Integrate API with frontend",
+                "Build custom static or dynamic web application",
+                "API Integration",
+                "Performance optimization",
               ],
             },
             {
@@ -212,7 +212,7 @@ function Content() {
       {/* Projects Section */}
       <section id="Projects" className="mb-12 md:mb-16 overflow-hidden">
         <header>
-          <h1 className="text-3xl sm:text-4xl font-bold">APPS</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold">PROOF OF WORK</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
             WORK SAMPLES
           </h2>
