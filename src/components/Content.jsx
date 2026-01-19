@@ -9,8 +9,6 @@ import Ts from "/ts.png";
 import ReactImg from "/react.png";
 import ReduxImg from "/redux.png";
 import NextJs from "/nextjs.png";
-import Mongodb from "/mongodb.png";
-import Express from "/express.png";
 import Node from "/nodejs.png";
 import Jwt from "/jwt.png";
 import Figma from "/figma.png";
@@ -18,7 +16,6 @@ import Axios from "/axios.png";
 import Cors from "/cors.png";
 import Github from "/github.png";
 import Docker from "/docker.png";
-import Aws from "/aws.png";
 import Code from "/code.png";
 import Bug from "/bug.png";
 import Web from "/web.png";
@@ -42,15 +39,11 @@ function Content() {
     { name: "React.Js", icon: ReactImg },
     { name: "Redux", icon: ReduxImg },
     { name: "Next.js", icon: NextJs },
-    { name: "MongoDB", icon: Mongodb },
-    { name: "Express", icon: Express },
     { name: "Node.js", icon: Node },
     { name: "JWT Auth", icon: Jwt },
     { name: "Axios", icon: Axios },
     { name: "Cors", icon: Cors },
-    { name: "Github", icon: Github },
-    { name: "Docker", icon: Docker },
-    { name: "AWS Cloud", icon: Aws },
+    { name: "Github", icon: Github }
   ];
 
   return (
