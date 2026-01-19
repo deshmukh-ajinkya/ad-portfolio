@@ -237,8 +237,8 @@ function Content() {
 
           <div className="flex flex-col gap-4 pt-4 text-sm sm:text-base">
             {[
-              { label: "Email", value: "ajinkya.deshmukh.webdev@gmail.com" },
-              { label: "Phone", value: "+91-7719950703" },
+              { label: "Email", value: "deshmukhasb@gmail.com" },
+              { label: "Phone", value: "+91-9730664391" },
               { label: "Country", value: "India" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-wrap gap-x-4 w-full">
