@@ -15,12 +15,9 @@ import Figma from "/figma.png";
 import Axios from "/axios.png";
 import Cors from "/cors.png";
 import Github from "/github.png";
-import Docker from "/docker.png";
 import Code from "/code.png";
 import Bug from "/bug.png";
 import Web from "/web.png";
-import Deploy from "/deployment.png";
-import Landing_Page from "/landing_page.png";
 import Demo from "/external.png";
 import Node_Package_Analyzer from "/npa.png";
 import Quickblog from "/quickblog.png";
@@ -68,6 +65,7 @@ function Content() {
             complex product requirements into intuitive, user-friendly digital
             experiences.
           </p>
+
           <p>
             My core focus is{" "}
             <span className="font-semibold">
@@ -77,34 +75,26 @@ function Content() {
             <span className="font-semibold">performance</span>,{" "}
             <span className="font-semibold">accessibility</span>, and{" "}
             <span className="font-semibold">pixel-perfect implementation</span>.
-            I also have a solid foundation in{" "}
-            <span className="font-semibold">UI/UX principles</span> and
-            confidently use tools like{" "}
-            <span className="font-semibold">Figma</span> and design systems to
-            translate concepts into user-centered, production-ready
-            applications.
+            I pay close attention to details that elevate usability and ensure
+            consistency across devices and browsers.
           </p>
+
           <p>
-            To ensure smooth front-end–backend integration, I actively explore
-            backend technologies and system behavior as implemented by backend
-            teams to better understand the full product landscape. I can also
-            handle essential backend tasks when needed—such as implementing{" "}
-            <span className="font-semibold">JWT-based authentication</span>,
-            developing{" "}
-            <span className="font-semibold">
-              REST APIs with Node and Express
-            </span>
-            , connecting servers to databases, and defining basic{" "}
-            <span className="font-semibold">MongoDB schemas</span>—while leaving
-            complexity to backend specialists.
+            I have a solid foundation in{" "}
+            <span className="font-semibold">UI/UX principles</span> and confidently
+            use tools like <span className="font-semibold">Figma</span>, component
+            libraries, and design systems to translate concepts into polished,
+            production-ready front-end applications that align with both user needs
+            and business goals.
           </p>
+
           <p>
-            My goal is to deliver front-end solutions that are visually
-            polished, functionally robust, and seamlessly integrated—creating
-            meaningful value for users and aligning with the broader product
-            vision.
+            My goal is to deliver front-end solutions that are visually refined,
+            highly interactive, and easy to maintain—creating meaningful user
+            experiences while supporting long-term product growth.
           </p>
         </div>
+
       </section>
 
       {/* Skills Section */}
@@ -173,15 +163,6 @@ function Content() {
                 "Rewamp & Optimize existing UI/UX design.",
               ],
             },
-            {
-              icon: Deploy,
-              title: ["App", "Deployment"],
-              desc: [
-                "End-to-end deployment of mern stack web app on aws.",
-                "Troobleshoot & fix deployment issues.",
-                "Configure domain on aws cloud.",
-              ],
-            },
           ].map((service, i) => (
             <div key={i} className="py-6 px-2 sm:px-3">
               <img src={service.icon} className="w-8 h-8 mb-2" />
@@ -222,11 +203,6 @@ function Content() {
               title: "NPM Dependency Analyzer",
               link: "https://deshmukh-ajinkya.github.io/packageanalyzer/",
               img: Node_Package_Analyzer,
-            },
-            {
-              title: "Event Booking UI/UX",
-              link: "https://www.figma.com/design/Z4vFsyMeRAEZLODh7E489Q/Event-Booking?node-id=0-1&t=ulyIcaomb0YsVxsx-1",
-              img: Landing_Page,
             },
           ].map((item, i) => (
             <div key={i}>
