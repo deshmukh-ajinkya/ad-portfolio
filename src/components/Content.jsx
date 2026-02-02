@@ -239,7 +239,7 @@ function Content() {
             {[
               { label: "Email", value: "deshmukhasb@gmail.com" },
               { label: "Phone", value: "+91-9730664391" },
-              { label: "Country", value: "India" },
+              { label: "Location", value: "Nagpur, Maharashtra, India" },
             ].map((item, idx) => (
               <div key={idx} className="flex flex-wrap gap-x-4 w-full">
                 <p className="text-purecyan w-[120px] shrink-0">{item.label}</p>
