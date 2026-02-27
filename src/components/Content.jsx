@@ -13,7 +13,7 @@ import Node from "/nodejs.png";
 import Jwt from "/jwt.png";
 import Figma from "/figma.png";
 import Axios from "/axios.png";
-import Cors from "/cors.png";
+import Google from "/google.png";
 import Github from "/github.png";
 // import Code from "/code.png";
 // import Bug from "/bug.png";
@@ -26,6 +26,7 @@ import MongoDB from "/mongodb.png";
 import Stripe from "/stripe.png";
 import AWS from "/aws.png";
 import Cloudrive from "/cloudrive.png";
+import AI from "/ai.png";
 
 function Content() {
   const skills = [
@@ -43,10 +44,11 @@ function Content() {
     { name: "Axios", icon: Axios },
     { name: "Express.js", icon: Express },
     { name: "MongoDB", icon: MongoDB },
-    { name: "Cors", icon: Cors },
     { name: "Github", icon: Github },
     { name: "Figma", icon: Figma },
     { name: "JWT Auth", icon: Jwt },
+    { name: "Google OAuth", icon: Google },
+    { name: "AI Integration", icon: AI },
     { name: "Payment", icon: Stripe },
     { name: "S3", icon: AWS },
   ];
