@@ -67,7 +67,7 @@ function Content() {
           {/* Resume Button */}
           <div className="mt-5">
             <a
-              href="/ajinkya_deshmukh_frontend_engineer.pdf"
+              href=" /ad-portfolio/ajinkya_deshmukh_frontend_engineer.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border border-purecyan text-purecyan px-5 py-2 rounded-lg text-sm font-semibold hover:bg-purecyan hover:text-black transition duration-300"
