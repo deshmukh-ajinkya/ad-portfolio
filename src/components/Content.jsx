@@ -15,18 +15,21 @@ import Figma from "/figma.png";
 import Axios from "/axios.png";
 import Cors from "/cors.png";
 import Github from "/github.png";
-import Code from "/code.png";
-import Bug from "/bug.png";
-import Web from "/web.png";
+// import Code from "/code.png";
+// import Bug from "/bug.png";
+// import Web from "/web.png";
 import Demo from "/external.png";
 import Node_Package_Analyzer from "/npa.png";
 import Quickblog from "/quickblog.png";
+import Express from "/express.png";
+import MongoDB from "/mongodb.png";
+import Stripe from "/stripe.png";
+import AWS from "/aws.png";
+import Cloudrive from "/cloudrive.png";
 
 function Content() {
   const skills = [
-    { name: "Windows", icon: Windows },
     { name: "Linux", icon: Linux },
-    { name: "Figma", icon: Figma },
     { name: "HTML 5", icon: Html },
     { name: "CSS 3", icon: Css },
     { name: "Tailwind CSS", icon: Tailwind },
@@ -37,10 +40,15 @@ function Content() {
     { name: "Redux", icon: ReduxImg },
     { name: "Next.js", icon: NextJs },
     { name: "Node.js", icon: Node },
-    { name: "JWT Auth", icon: Jwt },
     { name: "Axios", icon: Axios },
+    { name: "Express.js", icon: Express },
+    { name: "MongoDB", icon: MongoDB },
     { name: "Cors", icon: Cors },
-    { name: "Github", icon: Github }
+    { name: "Github", icon: Github },
+    { name: "Figma", icon: Figma },
+    { name: "JWT Auth", icon: Jwt },
+    { name: "Payment", icon: Stripe },
+    { name: "S3", icon: AWS },
   ];
 
   return (
@@ -48,10 +56,25 @@ function Content() {
       {/* Intro Section */}
       <section className="flex flex-col mb-12 md:mb-16">
         <header>
-          <h1 className="text-3xl sm:text-4xl font-bold">Ajinkya Deshmukh</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold">
+            Ajinkya Deshmukh
+          </h1>
+
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
             FRONTEND DEVELOPER | REACT SPECIALIST
           </h2>
+
+          {/* Resume Button */}
+          <div className="mt-5">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-purecyan text-purecyan px-5 py-2 rounded-lg text-sm font-semibold hover:bg-purecyan hover:text-black transition duration-300"
+            >
+              Download Resume
+            </a>
+          </div>
         </header>
 
         <div className="mt-6 text-sm sm:text-base leading-relaxed space-y-5 max-w-3xl">
@@ -77,15 +100,6 @@ function Content() {
             <span className="font-semibold">pixel-perfect implementation</span>.
             I pay close attention to details that elevate usability and ensure
             consistency across devices and browsers.
-          </p>
-
-          <p>
-            I have a solid foundation in{" "}
-            <span className="font-semibold">UI/UX principles</span> and confidently
-            use tools like <span className="font-semibold">Figma</span>, component
-            libraries, and design systems to translate concepts into polished,
-            production-ready front-end applications that align with both user needs
-            and business goals.
           </p>
 
           <p>
@@ -126,7 +140,7 @@ function Content() {
       </section>
 
       {/* Services Section */}
-      <section id="Services" className="mb-12 md:mb-16 overflow-hidden">
+      {/* <section id="Services" className="mb-12 md:mb-16 overflow-hidden">
         <header>
           <h1 className="text-3xl sm:text-4xl font-bold">DELIVERABLES</h1>
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
@@ -181,12 +195,12 @@ function Content() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Section */}
       <section id="Projects" className="mb-12 md:mb-16 overflow-hidden">
         <header>
-          <h1 className="text-3xl sm:text-4xl font-bold">PROOF OF WORK</h1>
+          {/* <h1 className="text-3xl sm:text-4xl font-bold">PROJECTS</h1> */}
           <h2 className="text-lg sm:text-xl font-bold text-purecyan mt-3 sm:mt-4">
             WORK SAMPLES
           </h2>
@@ -194,6 +208,11 @@ function Content() {
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
+            {
+              title: "Cloudrive - File Sharing App",
+              link: "https://www.cloudriv.com/",
+              img: Cloudrive,
+            },
             {
               title: "Blogging App Template",
               link: "https://blogging-template-one.vercel.app/login",
@@ -206,7 +225,13 @@ function Content() {
             },
           ].map((item, i) => (
             <div key={i}>
-              <img src={item.img} alt="Project" className="rounded-lg" />
+              <div className="w-full aspect-[16/9] overflow-hidden bg-white/5">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex justify-between items-center mt-3 sm:mt-4">
                 <span className="text-sm sm:text-base">{item.title}</span>
                 <div className="flex gap-4 items-center">
