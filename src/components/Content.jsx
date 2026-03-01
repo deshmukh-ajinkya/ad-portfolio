@@ -216,15 +216,10 @@ function Content() {
               img: Cloudrive,
             },
             {
-              title: "Blogging App Template",
+              title: "QuickBlog - Blogging Platform",
               link: "https://blogging-template-one.vercel.app/login",
               img: Quickblog,
-            },
-            {
-              title: "NPM Dependency Analyzer",
-              link: "https://deshmukh-ajinkya.github.io/packageanalyzer/",
-              img: Node_Package_Analyzer,
-            },
+            }
           ].map((item, i) => (
             <div key={i}>
               <div className="w-full aspect-[16/9] overflow-hidden bg-white/5">
