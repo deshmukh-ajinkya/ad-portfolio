@@ -67,7 +67,7 @@ function Content() {
           </h2>
 
           {/* Resume Button */}
-          <div className="mt-5">
+          {/* <div className="mt-5">
             <a
               href=" /ad-portfolio/ajinkya_deshmukh_frontend_engineer.pdf"
               target="_blank"
@@ -76,7 +76,7 @@ function Content() {
             >
               Download Resume
             </a>
-          </div>
+          </div> */}
         </header>
 
         <div className="mt-6 text-sm sm:text-base leading-relaxed space-y-5 max-w-3xl">
